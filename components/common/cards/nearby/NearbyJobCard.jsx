@@ -6,7 +6,7 @@ import { checkImageUrl } from "../../../../utils";
 
 const NearbyJobCard = ({ job, handleNavigate }) => {
   return (
-    <TouchableOpacity style={styles.container} onPress={() => handleNavigate(item)}>
+    <TouchableOpacity style={styles.container} onPress={() => handleNavigate(job)}>
       <TouchableOpacity style={styles.logoContainer}>
         <Image source={{ uri: checkImageUrl(job.employer_logo) ? job.employer_logo : "https://t4.ftcdn.net/jpg/05/05/61/73/360_F_505617309_NN1CW7diNmGXJfMicpY9eXHKV4sqzO5H.jpg" }} resizeMode="contain" style={styles.logoImage} />
       </TouchableOpacity>
